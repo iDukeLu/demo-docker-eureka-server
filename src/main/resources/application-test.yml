@@ -1,6 +1,16 @@
 eureka:
   instance:
     prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    register-with-eureka: false
+    fetch-registry: false
+    registry-fetch-interval-seconds: 5
+  server:
+    enable-self-preservation: false
+    response-cache-update-interval-ms: 3000
+    response-cache-auto-expiration-in-seconds: 180
+    eviction-interval-timer-in-ms: 3000
+#  serviceUrl:
+#    defaultZone: http://39.106.44.105:8760/eureka/
