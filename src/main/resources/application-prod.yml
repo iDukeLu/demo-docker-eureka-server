@@ -1,6 +1,7 @@
 eureka:
   instance:
     prefer-ip-address: true
+    ip-address: 39.105.99.4
     lease-expiration-duration-in-seconds: 15
     lease-renewal-interval-in-seconds: 5
   client:
