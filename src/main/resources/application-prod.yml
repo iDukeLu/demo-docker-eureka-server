@@ -8,10 +8,10 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     registry-fetch-interval-seconds: 5
+    serviceUrl:
+      defaultZone: http://39.106.44.105:8760/eureka/
   server:
     enable-self-preservation: false
     response-cache-update-interval-ms: 3000
     response-cache-auto-expiration-in-seconds: 180
     eviction-interval-timer-in-ms: 3000
-#  serviceUrl:
-#    defaultZone: http://39.106.44.105:8760/eureka/
